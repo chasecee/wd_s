@@ -86,12 +86,6 @@ function _s_entry_footer() {
 		}
 	}
 
-	if ( ! is_single() && ! post_password_required() && ( comments_open() || get_comments_number() ) ) {
-		echo '<span class="comments-link">';
-		comments_popup_link( esc_attr__( 'Leave a comment', '_s' ), esc_attr__( '1 Comment', '_s' ), esc_attr__( '% Comments', '_s' ) );
-		echo '</span>';
-	}
-
 	edit_post_link(
 		sprintf(
 			/* translators: %s: Name of current post */
@@ -451,15 +445,4 @@ function _s_display_mobile_menu() {
 		?>
 	</nav>
 	<?php
-}
-
-/**
- * Display the comments if the count is more than 0.
- *
- * @author WebDevStudios
- */
-function _s_display_comments() {
-	if ( comments_open() || get_comments_number() ) {
-		comments_template();
-	}
 }
