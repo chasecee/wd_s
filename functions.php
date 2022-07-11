@@ -24,6 +24,7 @@ function _s_get_theme_include_files() {
 		'inc/scripts.php', // Load styles and scripts.
 		'inc/template-tags.php', // Custom template tags for this theme.
 		'inc/custom.php', // Custom template tags for this theme.
+		'inc/blocks.php', // Block registration
 	];
 }
 

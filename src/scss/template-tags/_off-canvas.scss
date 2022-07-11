@@ -11,7 +11,7 @@
 		width: 75%;
 		z-index: 9998;
 
-		@screen tablet-portrait {
+		@screen lg {
 			width: 35vw;
 		}
 
@@ -34,7 +34,7 @@
 		top: theme( 'spacing.12' );
 		z-index: 9999;
 
-		@screen tablet-landscape {
+		@screen lg {
 			display: none;
 		}
 

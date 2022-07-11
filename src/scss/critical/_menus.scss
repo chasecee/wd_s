@@ -5,12 +5,12 @@
 .navigation-menu {
 	@apply hidden;
 
-	@screen tablet-landscape {
+	@screen lg {
 		@apply block;
 	}
 
 	.menu {
-		@apply flex;
+		@apply flex mb-0;
 
 		> li {
 			&:not( :last-child ) {
@@ -20,7 +20,7 @@
 	}
 
 	.sub-menu {
-		@apply bg-white py-8 absolute shadow-md;
+		@apply bg-white py-8 absolute;
 
 		left: -999em;
 		top: theme( 'spacing.24' );
@@ -90,7 +90,7 @@
 	.menu {
 		@apply block;
 
-		@screen tablet-landscape {
+		@screen lg {
 			@apply flex;
 		}
 	}

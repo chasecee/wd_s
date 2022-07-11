@@ -28,7 +28,7 @@
 	.nav-links {
 		@apply flex flex-col text-center;
 
-		@screen tablet-landscape {
+		@screen lg {
 			@apply flex-row justify-between;
 
 			text-align: unset;
@@ -39,7 +39,7 @@
 .post-navigation .nav-next {
 	@apply mt-16;
 
-	@screen tablet-landscape {
+	@screen lg {
 		@apply mt-0;
 	}
 }

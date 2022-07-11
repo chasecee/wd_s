@@ -8,7 +8,7 @@
 .scaffolding-nav {
 	@apply bg-gray-800 text-white mb-16 p-16 sticky text-center top-0 w-full z-50;
 
-	@screen tablet-portrait {
+	@screen lg {
 		.admin-bar & {
 			@apply top-32;
 		} // .admin-bar &
@@ -34,7 +34,7 @@
 .section-scaffolding {
 	@apply py-10 px-20;
 
-	@screen desktop {
+	@screen xl {
 		@apply px-0;
 	}
 
@@ -175,7 +175,7 @@
 .swatch-container {
 	@apply relative block;
 
-	@screen tablet-portrait {
+	@screen lg {
 		@apply grid grid-cols-12 gap-24;
 	}
 
@@ -183,13 +183,13 @@
 	.swatch {
 		@apply border border-black h-192 mb-24 mr-20 overflow-hidden text-center w-full relative;
 
-		@screen tablet-portrait {
+		@screen lg {
 			@apply col-span-3;
 		}
 
 		// The swatch <header>
 		header {
-			@apply text-center shadow-md items-center text-white flex flex-col justify-center;
+			@apply text-center items-center text-white flex flex-col justify-center;
 
 			height: calc( 100% - 40px );
 		} // header

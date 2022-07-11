@@ -7,14 +7,14 @@
 
 	border-spacing: 0;
 
-	@screen desktop {
+	@screen xl {
 		@apply border border-solid border-black;
 	}
 
 	thead {
 		@apply hidden;
 
-		@screen desktop {
+		@screen xl {
 			@apply table-row-group;
 		}
 	}
@@ -23,7 +23,7 @@
 	td {
 		@apply p-8 text-center;
 
-		@screen desktop {
+		@screen xl {
 			@apply table-cell;
 		}
 	}
@@ -31,7 +31,7 @@
 	td {
 		@apply block text-center border border-solid border-black;
 
-		@screen desktop {
+		@screen xl {
 			@apply table-cell;
 		}
 
@@ -40,7 +40,7 @@
 
 			content: attr( data-label );
 
-			@screen desktop {
+			@screen xl {
 				@apply hidden;
 			}
 		}
@@ -49,7 +49,7 @@
 	th {
 		@apply tracking-widest uppercase border border-solid border-black;
 
-		@screen tablet-portrait {
+		@screen lg {
 			@apply table-cell;
 		}
 	}
@@ -57,7 +57,7 @@
 	tr {
 		@apply block mb-16;
 
-		@screen desktop {
+		@screen xl {
 			@apply table-row mb-0;
 		}
 	}

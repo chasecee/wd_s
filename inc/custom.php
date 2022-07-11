@@ -46,3 +46,101 @@ add_action('init', function () {
         remove_action('admin_bar_menu', 'wp_admin_bar_comments_menu', 60);
     }
 });
+
+/**
+ * Function to filter svg code from wp editor.
+ *
+ * @author Corey Collins
+ */
+function get_kses_extended_ruleset() {
+	$kses_defaults = wp_kses_allowed_html( 'post' );
+
+	$svg_args = array(
+		'defs'           => array(
+			'class'           => true,
+			'aria-hidden'     => true,
+			'aria-labelledby' => true,
+			'role'            => true,
+			'xmlns'           => true,
+			'width'           => true,
+			'height'          => true,
+			'viewbox'         => true, // <= Must be lower case!
+		),
+		'lineargradient' => array(
+			'id'            => true,
+			'x1'            => true,
+			'x2'            => true,
+			'y2'            => true,
+			'gradientunits' => true,
+			'width'         => true,
+
+		),
+		'rect'           => array(
+			'id'        => true,
+			'data-name' => true,
+			'opacity'   => true,
+			'transform' => true,
+			'fill'      => true,
+			'width'     => true,
+			'height'    => true,
+			'rx'	    => true,
+		),
+		'stop'           => array(
+			'offset'     => true,
+			'stop-color' => true,
+
+		),
+		'svg'            => array(
+			'class'           => true,
+			'aria-hidden'     => true,
+			'aria-labelledby' => true,
+			'role'            => true,
+			'xmlns'           => true,
+			'width'           => true,
+			'height'          => true,
+			'viewbox'         => true, // <= Must be lower case!
+			'fill'			  => true,
+		),
+		'g'              => array(
+			'fill'         => true,
+			'transform'    => true,
+			'stroke'       => true,
+			'id'           => true,
+			'stroke-width' => true,
+		),
+		'title'          => array( 'title' => true ),
+		'path'           => array(
+			'd'           	  => true,
+			'fill'        	  => true,
+			'transform'   	  => true,
+			'stroke'      	  => true,
+			'strokewidth' 	  => true,
+			'id'          	  => true,
+			'fill-rule'   	  => true,
+			'stroke-width' 	  => true,
+			'stroke-linecap'  => true,
+			'stroke-linejoin' => true,
+		),
+		'circle'         => array(
+			'd'         => true,
+			'r'         => true,
+			'fill'      => true,
+			'transform' => true,
+			'stroke'    => true,
+			'cx'        => true,
+			'cy'        => true,
+			'id'        => true,
+		),
+		'line'           => array(
+			'd'         => true,
+			'r'         => true,
+			'fill'      => true,
+			'transform' => true,
+			'stroke'    => true,
+			'x2'        => true,
+			'y2'        => true,
+			'id'        => true,
+		),
+	);
+	return array_merge( $kses_defaults, $svg_args );
+}
