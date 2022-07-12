@@ -26,7 +26,7 @@
             "label": "Override Colors",
             "name": "override_colors",
             "type": "true_false",
-            "instructions": "Experimental and not meant for multicolor SVG's",
+            "instructions": "",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -41,7 +41,7 @@
             "ui_off_text": ""
         },
         {
-            "key": "field_6285596257ce4",
+            "key": "field_62cca7ee1c747",
             "label": "Override Color",
             "name": "override_color",
             "type": "editor_palette",
@@ -105,12 +105,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "create_gutenberg_block": 0,
-    "block_name": "",
-    "block_slug": "",
-    "block_category": "text",
-    "block_align": "full",
-    "block_container_class": "block-inner",
-    "inner_blocks": 0,
-    "modified": 1652907145
+    "modified": 1657589282
 }

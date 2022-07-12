@@ -1,0 +1,71 @@
+{
+	"version": 2,
+	"settings": {
+		"color": {
+			"defaultPalette": false,
+			"custom": false,
+			"palette": [
+				{
+					"name": "nebula",
+					"slug": "nebula",
+					"color": "#FF5233"
+				},
+				{
+					"name": "nova",
+					"slug": "nova",
+					"color": "#0058FF"
+				},
+				{
+					"name": "comet",
+					"slug": "comet",
+					"color": "#8AB2FF"
+				},
+				{
+					"name": "black",
+					"slug": "black",
+					"color": "#001D30"
+				},
+				{
+					"name": "zinc-600",
+					"slug": "zinc-600",
+					"color": "#52525A"
+				},
+				{
+					"name": "zinc-500",
+					"slug": "zinc-500",
+					"color": "#717179"
+				},
+				{
+					"name": "zinc-400",
+					"slug": "zinc-400",
+					"color": "#A1A1A9"
+				},
+				{
+					"name": "zinc-300",
+					"slug": "zinc-300",
+					"color": "#D4D4D8"
+				},
+				{
+					"name": "zinc-200",
+					"slug": "zinc-200",
+					"color": "#E4E4E7"
+				},
+				{
+					"name": "zinc-100",
+					"slug": "zinc-100",
+					"color": "#F4F4F5"
+				},
+				{
+					"name": "zinc-50",
+					"slug": "zinc-50",
+					"color": "#FAFAFA"
+				},
+				{
+					"name": "white",
+					"slug": "white",
+					"color": "#FFFFFF"
+				}
+			]
+		}
+	}
+}

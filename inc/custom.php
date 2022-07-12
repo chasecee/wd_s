@@ -144,3 +144,10 @@ function get_kses_extended_ruleset() {
 	);
 	return array_merge( $kses_defaults, $svg_args );
 }
+
+// detect, convert, and replace hex codes (usually in svg's)
+function convertHexToCurrentColor($name)
+{
+	$name = preg_replace("/#[a-f0-9]{6}/i", "currentColor", $name);
+	return $name;
+}

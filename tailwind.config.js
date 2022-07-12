@@ -4,14 +4,45 @@ const glob = require( 'glob' );
 // Get arrays of all of the files.
 const topLevelPhpFiles = glob.sync( './*.php' ),
 	directoryFiles = [
-		'./inc/*.php',
+		'./inc/**/*.php',
 		'./template-parts/*.php',
 		'./src/js/**/*.js',
 	];
 
 module.exports = {
 	content: topLevelPhpFiles.concat( directoryFiles ),
+	safelist: [
+		{
+			pattern: /^(p|m)(|y|x|b)-/,
+			variants: [ 'md' ],
+		},
+		{
+			pattern: /^(w|h|list|bg|text|flex)-/,
+		},
+		{
+			pattern: /^gap-[0-9]/,
+			variants: [ 'md' ],
+		},
+	],
 	theme: {
+		colors: {
+			black: '#001D30',
+			white: '#FFFFFF',
+			transparent: 'transparent',
+			current: 'currentColor',
+			nebula: '#FF5233',
+			nova: '#0058FF',
+			comet: '#8AB2FF',
+			zinc: {
+				600: '#52525A',
+				500: '#717179',
+				400: '#A1A1A9',
+				300: '#D4D4D8',
+				200: '#E4E4E7',
+				100: '#F4F4F5',
+				50: '#FAFAFA',
+			},
+		},
 		fontSize: {
 			'root-em': '16px',
 			14: '0.875rem',
@@ -100,11 +131,6 @@ module.exports = {
 		extend: {
 			backgroundOpacity: {
 				10: '0.1',
-			},
-			colors: {
-				wds: {
-					orange: '#f3713c',
-				},
 			},
 		},
 	},

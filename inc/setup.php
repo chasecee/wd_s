@@ -131,6 +131,11 @@ function _s_setup() {
 
 	// Gutenberg responsive embed support.
 	add_theme_support( 'responsive-embeds' );
+
+	// Custom
+	// Use theme colors from theme.json
+	// https://github.com/Log1x/acf-editor-palette/issues/30
+	add_theme_support('editor-color-palette', wp_get_global_settings(array('color', 'palette', 'theme')));
 }
 
 add_action( 'after_setup_theme', '_s_setup' );
