@@ -17,10 +17,14 @@ module.exports = {
 			variants: [ 'md' ],
 		},
 		{
-			pattern: /^(w|h|list|bg|text|flex)-/,
+			pattern: /^(w|h|list|bg|text|flex|transform|translate|-translate)-/,
 		},
 		{
 			pattern: /^gap-[0-9]/,
+			variants: [ 'md' ],
+		},
+		{
+			pattern: /^order-/,
 			variants: [ 'md' ],
 		},
 	],
