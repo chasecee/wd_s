@@ -32,7 +32,7 @@
 
 	<header class="site-header">
 
-		<div class="container">
+		<div class="container-full">
 
 			<div class="site-branding">
 
@@ -53,7 +53,7 @@
 					'fallback_cb'    => false,
 					'theme_location' => 'primary',
 					'menu_id'        => 'primary-menu',
-					'menu_class'     => 'menu dropdown container',
+					'menu_class'     => 'menu dropdown',
 					'container'      => false,
 				]
 			);

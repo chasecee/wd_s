@@ -93,8 +93,8 @@ $inner_class = $bg_color . ' ' . $padding . ' ' . $bg_class . ' ' . $bg_blend_cl
 	<div class="<?php echo esc_attr( $inner_class ); ?> <?php echo esc_attr( $bg_image_custom_class ); ?>" style="<?php echo esc_attr($bg_image_attr); ?>">
 
 		<?php if ( get_field( 'patterns' ) == 0 ) : ?>
-			<div class="absolute top-0 right-0 z-0 opacity-50"><?php get_template_part( '/svg/inline/inline', 'bg-dots-topright.svg' ); ?></div>
-			<div class="absolute bottom-0 left-0 z-0 opacity-50"><?php get_template_part( '/svg/inline/inline', 'bg-dots-bottomleft.svg' ); ?></div>
+			<!-- <div class="absolute top-0 right-0 z-0 opacity-50"><?php get_template_part( '/svg/inline/inline', 'bg-dots-topright.svg' ); ?></div>
+			<div class="absolute bottom-0 left-0 z-0 opacity-50"><?php get_template_part( '/svg/inline/inline', 'bg-dots-bottomleft.svg' ); ?></div> -->
 		<?php endif; ?>
 
 		<div class="relative <?php echo esc_attr($content_class); ?>">

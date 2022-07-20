@@ -6,24 +6,24 @@
 			"custom": false,
 			"palette": [
 				{
-					"name": "nebula",
-					"slug": "nebula",
-					"color": "#FF5233"
+					"name": "tan",
+					"slug": "tan",
+					"color": "#F1EFE8"
 				},
 				{
-					"name": "nova",
-					"slug": "nova",
-					"color": "#0058FF"
+					"name": "sky",
+					"slug": "sky",
+					"color": "#6267E7"
 				},
 				{
-					"name": "comet",
-					"slug": "comet",
-					"color": "#8AB2FF"
+					"name": "sun",
+					"slug": "sun",
+					"color": "#F3F360"
 				},
 				{
 					"name": "black",
 					"slug": "black",
-					"color": "#001D30"
+					"color": "#000000"
 				},
 				{
 					"name": "zinc-600",

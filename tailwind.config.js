@@ -5,6 +5,7 @@ const glob = require( 'glob' );
 const topLevelPhpFiles = glob.sync( './*.php' ),
 	directoryFiles = [
 		'./inc/**/*.php',
+		'./index.php',
 		'./template-parts/*.php',
 		'./src/js/**/*.js',
 	];
@@ -30,13 +31,13 @@ module.exports = {
 	],
 	theme: {
 		colors: {
-			black: '#001D30',
+			black: '#000000',
 			white: '#FFFFFF',
 			transparent: 'transparent',
 			current: 'currentColor',
-			nebula: '#FF5233',
-			nova: '#0058FF',
-			comet: '#8AB2FF',
+			tan: '#F1EFE8',
+			sky: '#6267E7',
+			sun: '#F3F360',
 			zinc: {
 				600: '#52525A',
 				500: '#717179',
@@ -136,6 +137,15 @@ module.exports = {
 			backgroundOpacity: {
 				10: '0.1',
 			},
+			lineHeight: {
+				105: '1.05',
+				130: '1.30',
+				140: '1.40',
+				150: '1.50',
+				156: '1.56',
+				165: '1.65',
+				100: '1.00',
+			},
 		},
 		fontFamily: { sans: [ 'DM Sans', 'sans-serif' ] },
 	},
@@ -147,22 +157,22 @@ module.exports = {
 					fontSize: '100%',
 				},
 				'h1,.h1': {
-					fontSize: config( 'theme.fontSize.heading-xl' ),
+					fontSize: config( 'theme.fontSize.48' ),
 				},
 				'h2,.h2': {
-					fontSize: config( 'theme.fontSize.heading-lg' ),
+					fontSize: config( 'theme.fontSize.32' ),
 				},
 				'h3,.h3': {
-					fontSize: config( 'theme.fontSize.heading-md' ),
+					fontSize: config( 'theme.fontSize.32' ),
 				},
 				'h4,.h4': {
-					fontSize: config( 'theme.fontSize.heading-sm' ),
+					fontSize: config( 'theme.fontSize.20' ),
 				},
 				'h5,.h5': {
-					fontSize: config( 'theme.fontSize.heading-xs' ),
+					fontSize: config( 'theme.fontSize.16' ),
 				},
 				'h6,.h6': {
-					fontSize: config( 'theme.fontSize.heading-xs' ),
+					fontSize: config( 'theme.fontSize.16' ),
 				},
 				'h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6': {
 					marginBottom: config( 'theme.spacing.16' ),
