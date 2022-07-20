@@ -24,7 +24,7 @@ module.exports = {
 			variants: [ 'md' ],
 		},
 		{
-			pattern: /^order-/,
+			pattern: /^(order-|grid-)/,
 			variants: [ 'md' ],
 		},
 	],
@@ -137,6 +137,7 @@ module.exports = {
 				10: '0.1',
 			},
 		},
+		fontFamily: { sans: [ 'DM Sans', 'sans-serif' ] },
 	},
 	variants: {},
 	plugins: [

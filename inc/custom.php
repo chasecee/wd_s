@@ -151,3 +151,7 @@ function convertHexToCurrentColor($name)
 	$name = preg_replace("/#[a-f0-9]{6}/i", "currentColor", $name);
 	return $name;
 }
+
+// remove bs svg bloat on frontend
+remove_action( 'wp_enqueue_scripts', 'wp_enqueue_global_styles' );
+remove_action( 'wp_body_open', 'wp_global_styles_render_svg_filters' );

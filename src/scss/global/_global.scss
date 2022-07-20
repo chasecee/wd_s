@@ -11,8 +11,11 @@
 
 html {
 	scroll-behavior: smooth;
+	@apply font-sans;
 }
-
+body {
+	@apply text-black;
+}
 pre {
 	@apply overflow-auto;
 }

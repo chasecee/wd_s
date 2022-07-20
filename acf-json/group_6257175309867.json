@@ -76,7 +76,7 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "mars",
+            "default_value": "nebula",
             "exclude_colors": "",
             "return_format": "slug"
         },
@@ -397,5 +397,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1657561170
+    "modified": 1658003956
 }
